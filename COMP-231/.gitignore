@@ -11,6 +11,7 @@ nb-configuration.xml
 .nb-gradle/
 
 
+
 ### OSX ###
 .DS_Store
 .AppleDouble
@@ -22,6 +23,7 @@ Icon
 
 # Thumbnails
 ._*
+*.ini
 
 # Files that might appear on external disk
 .Spotlight-V100
