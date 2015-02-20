@@ -1,6 +1,3 @@
-COMP-313
-========
+## COMP-313 : Structure and Interpretation of Computer Programs
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Semyonic/comp-313/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+This course examines from first principles the nature of computer programs. Starting from first principles, students will investigate different paradigms for the construction and evaluation of computer programs.
