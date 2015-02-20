@@ -1,6 +1,3 @@
-COMP-262
-========
+## COMP-262 : Large Scale Programming
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Semyonic/comp-262/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+This course builds on COMP 261(Object Oriented Programming) to move on to the techniques involved in producing larger computer systems in an object-oriented programming environment. Subjects covered will include various types of layered and modularized implementation, code reusability and implementations involving more than one execution environment.
