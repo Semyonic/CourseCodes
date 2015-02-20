@@ -1,0 +1,11 @@
+**************************************************************************
+
+I learned how to implement Quick Sort Algorithm into java language using JUnit for testing projects and measuring program performance.
+
+My Quick Sort method having difficulties. It starts working after 1o elements. It sorts but first 10 element has same ID.
+
+Insertion Sort Best Case Performance is O(nlogn)
+Insertion Sort Worst Case Performance is O(nlogn)
+
+
+Semih Onay - 11176008
