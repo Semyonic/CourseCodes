@@ -1,3 +1,0 @@
-## COMP-306 : Operating Systems
-
-Operating systems play a fundamental role in the use of computers and are of enormous commercial importance. This course looks at how they work. Contents include, classification and structure of operating systems, storage media, memory management and dynamic storage strategies, scheduling algorithms, I/O and interrupt structures, protection and security, queuing and network control models, systems software, linkers, loaders, assemblers, translators and programming environments, case studies of existing operating systems and implementation of operating system modules.
