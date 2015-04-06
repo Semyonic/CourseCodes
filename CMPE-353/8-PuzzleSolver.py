@@ -14,5 +14,11 @@ def convert_1d(_2d_matrix):
     return _1D
 
 def inversion(matrix):
-    for i in range(matrix):
-        
+    inv=0
+    converted_matrix=convert_1d(matrix)
+    for i in range(len(converted_matrix)):
+        if converted_matrix.index(i) < i and converted_matrix.index(i) !=0 :
+            inv +=1
+    return inv
+
+print inversion(initial_state)
