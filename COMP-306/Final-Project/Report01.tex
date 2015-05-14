@@ -1,0 +1,121 @@
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{lipsum}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{listings}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+ 
+\lstdefinestyle{mystyle}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=single,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+\lstset{style=mystyle}
+\allsectionsfont{\centering \normalfont\scshape}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{10pt}
+\numberwithin{figure}{section}
+\setlength\parindent{0pt} 
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 
+\title{	
+\normalfont \normalsize 
+\textsc{Istanbul Bilgi University - Department of Computer Science} \\ [25pt]
+\horrule{0.5pt} \\[0.4cm]
+\huge Project Report - 01 \\ Solution Method \\ COMP 306 
+\horrule{2pt} \\[0.5cm]
+}
+
+\author{Semih Onay}
+\date{\normalsize\today} 
+\begin{document}
+\maketitle
+
+
+
+
+\title{Project Report - 02 \\ Solution Method to Apply \\ COMP 306} 
+
+\author{Semih \textsc{ONAY}} 
+
+\date{\today} 
+
+\begin{document}
+
+\maketitle
+
+\section{Solution Method}
+I will use Monitors with Threads and each philosopher runs the code below
+
+\begin{lstlisting}
+while (1) { 
+	think();
+	take_chopsticks(i);
+	eat();
+	put_chopsticks(i);
+}
+\end{lstlisting}
+\lstinputlisting[caption=Scheduler, style=mystyle]
+
+\subsection{Advantages}
+\begin{itemize}
+\item Easy to implement
+\item Encapsulated data objects and procedures
+\item Per-monitor lock enforces mutual exclusion
+\item Only one thread may be executing in the monitor at a time
+\item Thread inside the monitor may give out the monitor lock to wait for a condition
+\end{itemize}
+
+\subsection{Disadvantages}
+\begin{itemize}
+\item Can be misused of locks and semaphores
+\item Still have possibility of starvation
+\item Still have possibility of deadlock
+\end{itemize} 
+
+\newpage
+
+\section{Sample Code}
+
+\begin{lstlisting}
+sem_t chopstick[5]; // Initialize each to 1 take_chopsticks(int i) {
+  wait(&chopstick[i]);
+  wait(&chopstick[(i+1)%5]);
+}
+put_chopsticks(int i) {
+  signal(&chopstick[i]);
+  signal(&chopstick[(i+1)%5]);
+	}
+}
+\end{lstlisting}
+\lstinputlisting[caption=Scheduler, style=mystyle]
+
+\end{document}
