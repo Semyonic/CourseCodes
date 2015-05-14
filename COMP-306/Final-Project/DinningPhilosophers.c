@@ -14,6 +14,94 @@
 *   Philosopher four is holding chopstick four, but is waiting for chopstick zero
 */
 
+/*     Example Output
+ 
+ #########################
+ Philosopher [1]  THINKING
+ Philosopher [2]  THINKING
+ Philosopher [3]  THINKING
+ Philosopher [4]  THINKING
+ Philosopher [5]  THINKING
+ #########################
+ Philosopher (1) is done thinking. Ready to eat.
+ 
+ Philosopher (2) is done thinking. Ready to eat.
+ 
+ Philosopher (1) picked right FORK #1
+ 
+ Philosopher (0) is done thinking. Ready to eat.
+ 
+ Philosopher (2) picked right FORK #2
+ 
+ Philosopher (4) is done thinking. Ready to eat.
+ +++++++++++++++++++++++++++
+ Philosopher (3) is done thinking. Ready to eat.
+ 
+ Philosopher (0) picked right FORK #0
+ +++++++++++++++++++++++++++
+ Philosopher (4) picked right FORK #4
+ 
+ Philosopher 0 and 2:  WAITING
+ 
+ Philosopher (3) picked right FORK #3
+ +++++++++++++++++++++++++++
+ Philosopher 1 and 3:  WAITING
+ +++++++++++++++++++++++++++
+ Philosopher (1) picked left FORK #2
+ +++++++++++++++++++++++++++
+ Philosopher 4 and 1:  WAITING
+ 
+ Philosopher (2) picked left FORK #3
+ 
+ Philosopher 3 and 5:  WAITING
+ +++++++++++++++++++++++++++
+ Philosopher 2 and 4:  WAITING
+ 
+ Philosopher (0) picked left FORK #1
+ +++++++++++++++++++++++++++
+ Philosopher (4) picked left FORK #0
+ 
+ Philosopher 0 and 2:  WAITING
+ 
+ Philosopher (3) picked left FORK #4
+ +++++++++++++++++++++++++++
+ Philosopher 1 and 3:  WAITING
+ +++++++++++++++++++++++++++
+ ******* Philosopher (1) : Eating with the Stick [1] and [2] ******
+ +++++++++++++++++++++++++++
+ Philosopher 4 and 1:  WAITING
+ 
+ ******* Philosopher (2) : Eating with the Stick [2] and [3] ******
+ 
+ Philosopher 3 and 5:  WAITING
+ 
+ Philosopher 2 and 4:  WAITING
+ 
+ ******* Philosopher (0) : Eating with the Stick [0] and [1] ******
+ 
+ ******* Philosopher (4) : Eating with the Stick [4] and [0] ******
+ 
+ ******* Philosopher (3) : Eating with the Stick [3] and [4] ******
+ 
+ ------ Philosopher (1): is done eating. DROP sticks [2] and  [1] ------
+ 
+ ------ Philosopher (2): is done eating. DROP sticks [3] and  [2] ------
+ 
+ ------ Philosopher (0): is done eating. DROP sticks [1] and  [0] ------
+ 
+ ------ Philosopher (4): is done eating. DROP sticks [0] and  [4] ------
+ 
+ ------ Philosopher (3): is done eating. DROP sticks [4] and  [3] ------
+ 
+ END OF FOOD
+ P1 eaten 1 times
+ P2 eaten 1 times
+ P3 eaten 1 times 
+ P4 eaten 1 times 
+ P5 eaten 1 times 
+
+*/
+
 #include <pthread.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -24,7 +112,7 @@
 // Globals
 #define PHILOSOPHERS 5
 #define DELAYER 50000
-#define FOOD 26
+#define FOOD 6
 
 // Function Declaration
 void *philosopher (void *id);
