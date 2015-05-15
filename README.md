@@ -1,6 +1,6 @@
 # CourseCodes
 =============
-## COMP-180 : How to Design Programs
+## [a link]COMP-180 : How to Design Programs(https://github.com/Semyonic/CourseCodes/tree/master/COMP-180)
 
 The course aims to develop skills in reading, understanding and writing a document critically, and the ability of discussing rationally. The objective of the course is to introduce the design of programs, understanding man pages, debugging programs, interpreting specifications, writing content-structured documents and how to ask smart questions. This course includes three parts: Meta-Skills (MS), How to Design Programs (HtDP) and Discrete Mathematics (DM)
 
@@ -38,6 +38,10 @@ Machine learning concerns the construction of systems that can learn from data. 
 ## COMP-412 : Parsing, Compiling and Interpreting
 
 The implementation of compilers has enabled the production of increasingly large computer systems. Compilers and assemblers play a crucial role and at the same time are good examples of large and complex programs that have at least in part a sound mathematical basis for the way they work. This course studies the different phases of compiler construction and engineering and scientific issue in each stage.
+
+### COMP-431 : Artificial Intelligence and Symbolic Programming
+
+This course aims to study the basic concepts of artificial intelligence. Topics covered include representation of knowledge, search and heuristic programming, logic and logic programming, application areas of artificial intelligence: problem-solving, game and puzzles, expert systems, planning, natural language understanding and learning.
 
 ## COMP-461 : Web Services and Systems
 
