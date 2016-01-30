@@ -47,3 +47,7 @@ This course aims to study the basic concepts of artificial intelligence. Topics 
 ## [COMP-461 : Web Services and Systems](https://github.com/Semyonic/CourseCodes/tree/master/COMP-461)
 
 Programs running on one computer to provide services to users or computers elsewhere are becoming increasingly important. A number of programming languages and programming environments have evolved specifically to address this need. This course looks at the issues involved in writing service-providing programs, using the latest programming languages and technology.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Semyonic/coursecodes/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
